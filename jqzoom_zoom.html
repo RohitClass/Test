@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <style>
+    .zoom {
+      display: inline-block;
+      position: relative;
+    }
+
+    .zoom img {
+      display: block;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.20/jquery.zoom.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#produto').zoom();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="zoom" id="produto">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/a2/52/1f/a2521fc10b6afa4a50284545076bb3e6.jpg" width="500px" />
+  </div>
+</body>
+
+</html>

@@ -4,22 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
-        <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://www.jqueryscript.net/demo/nivo-slider/jquery.nivo.slider.js"></script>
+        <link rel="stylesheet" href="https://www.jqueryscript.net/css/jquerysctipttop.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/themes/default/default.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/themes/light/light.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/themes/dark/dark.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/themes/bar/bar.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/nivo-slider.css">
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/nivo-slider/demo/style.css">
     </head>
     <body>
-        <div class="slider-wrapper">
-            <div id="slider" class="nivoSlider">
-                <img src="https://source.unsplash.com/Lzx4J_Pb3sk/1500x1000" alt="Slide 1" />
-                <img src="https://source.unsplash.com/vddccTqwal8/1500x1000" alt="Slide 2" />
-                <img src="https://source.unsplash.com/cZVthlrnlnQ/1500x1000" alt="Slide 3" />
-               
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="https://www.jqueryscript.net/demo/nivo-slider/demo/images/toystory.jpg" data-thumb="https://www.jqueryscript.net/demo/nivo-slider/demo/images/toystory.jpg" alt="">
+                    <a href="http://dev7studios.com">
+                        <img
+                            src="https://www.jqueryscript.net/demo/nivo-slider/demo/images/up.jpg"
+                            data-thumb="https://www.jqueryscript.net/demo/nivo-slider/demo/images/up.jpg"
+                            alt=""
+                            title="This is an example of a caption">
+                    </a>
+                    <img
+                        src="https://www.jqueryscript.net/demo/nivo-slider/demo/images/walle.jpg"
+                        data-thumb="https://www.jqueryscript.net/demo/nivo-slider/demo/images/walle.jpg"
+                        alt=""
+                        data-transition="slideInLeft"
+                        title="This is an example of a Rohit">
+                    <img
+                        src="https://www.jqueryscript.net/demo/nivo-slider/demo/images/nemo.jpg"
+                        data-thumb="https://www.jqueryscript.net/demo/nivo-slider/demo/images/nemo.jpg"
+                        alt=""
+                        title="#htmlcaption">
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong>
+                    <a href="#"> action</a>.
+                </div>
             </div>
         </div>
-        
     </body>
     <script>
         $(document).ready(function(){
@@ -32,6 +56,5 @@
                 controlNav: true, 
             });
         });
-        </script>
-        
+    </script>
 </html>
