@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check box</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <style>
+            ul li{
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <ul>
+                    <li>
+                        <input class="check" type="checkbox">
+                        Parent
+                    </li>
+                    <li>
+                        <ul class="parent_ul">
+                            <li>
+                                <input class="child" type="checkbox">Box1
+                            </li>
+                            <li>
+                                <input class="child"  type="checkbox">Box2
+                            </li>
+                            <li>
+                                <input class="child" type="checkbox">Box3
+                            </li>
+                            <li>
+                                <input class="child" type="checkbox">Box3
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script>
+            
+            $(document).ready(function(){
+                $(".check").click(function(){
+                    var target_li = $(this).parent().next().children().children();
+                    if($(this).prop('checked')){
+                        target_li.each(function(){
+                            $(this).children().prop('checked',true)
+                        })
+                    }else{
+                        target_li.each(function(){
+                            $(this).children().prop('checked',false)
+                        }) 
+                    }
+                });
+
+             $('.child').click(function(){
+                if($(this).prop('checked')){
+                    $(this).parent().parent().parent().prev().children().prop('checked',true)
+                }else{
+                    var status = true;
+                    var target = $(this).parent().parent().children();
+                    target.each(function(){
+                        if($(this).children().prop('checked')){
+                            status = false;
+                        }
+                    })
+                    if(status){
+                        $(this).parent().parent().parent().prev().children().prop('checked',false)
+                    }
+                }
+                })
+             });
+        </script>
+    </body>
+</html>

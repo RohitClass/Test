@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <style>
+            ul li{
+                list-style: none;
+            }
+            .hide{
+                /* display: none; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="checkbox">
+            <h2>CheckBox</h2>
+            <ul>
+                <li>
+                    <input class="all_check" type="checkbox">All Check
+                </li>
+                <li>
+                    <ul class="hide">
+                        <li>
+                            <input class="check" type="checkbox">box1
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box2
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box3
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box4
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box5
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box6
+                        </li>
+                        <li>
+                            <input class="check" type="checkbox">box7
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+
+$(document).ready(function(){
+
+    //  <-----for all check---->
+
+    $('.all_check').click(function(){
+        var target_li = $(this).parent().next().children().children();
+        if($(this).prop('checked')){
+            target_li.each(function(){
+                $(this).children().prop('checked',true);
+            })
+        }else{
+            target_li.each(function(){
+                $(this).children().prop('checked',false);
+            })
+        }
+    })
+
+    $('.check').click(function(){
+        var not_check_len = $('input.check').not(':checked').length
+        if(not_check_len == 0){
+            $(this).parent().parent().parent().prev().children().prop('checked','checked');
+        }else{
+            $(this).parent().parent().parent().prev().children().prop('checked',false); 
+        }
+    //    if($(this).prop('checked')){
+    //     $(this).parent().parent().parent().prev().children().prop('checked',true);
+    //    }else{
+    //     var status = true;
+    //     var target_ul = $(this).parent().parent().children();
+    //         target_ul.each(function(){
+    //             if($(this).children().prop('checked')){
+    //              status = false;
+    //             }
+    //         })
+    //    if(status){
+    //     $(this).parent().parent().parent().prev().children().prop('checked',false);
+    //    }
+    //    }
+
+    })
+    
+
+
+
+
+
+});
+        </script>
+    </body>
+</html>

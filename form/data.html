@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul>
+        <li>List1</li>
+        <div class="list4">List2</div>
+        <li class="list3">List3</li>
+        <li>List4</li>
+    </ul>
+    <div>hjhh</div>
+    <ul>
+        <li>List1</li>
+        <li class="list4">List2</li>
+        <li>List3</li>
+        <li>List4</li>
+    </ul>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // $(".list3").siblings('li').css('color','red')
+        $(".list3").closest('div').css('color','lightblue')
+    })
+</script>
