@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customer Form</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+      .container {
+        margin-bottom: 5%;
+      }
+
+      #form-header {
+        margin-top: 5%;
+        text-align: center;
+      }
+
+      #form-tagline {
+        background: #ff6d00;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        color: #ffffff;
+        margin-top: 5%;
+        padding: 4%;
+        text-align: left;
+      }
+
+      #form-tagline .fa {
+        margin-bottom: 15%;
+      }
+
+      #form-tagline h2 {
+        margin-bottom: 15%;
+      }
+
+      #form-content {
+        background: #f4f4f4;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        margin-top: 5%;
+        padding: 3%;
+      }
+
+      .form-group {
+        margin-top: 5%;
+      }
+
+      .contact {
+        padding: 4%;
+        height: 400px;
+      }
+
+      .control-label {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      div .submit-button {
+        margin-top: 3%;
+        text-align: right;
+      }
+
+      button#submit {
+        white-space: normal;
+        width: auto;
+        background: #ff6d00;
+        color: #ffffff;
+        font-weight: 600;
+        width: 25%;
+      }
+
+      .message_red {
+        text-align: center;
+        color: red;
+        margin: 0;
+        padding: 10px 0 0 200px;
+      }
+
+      .message_green {
+        text-align: center;
+        color: rgb(0, 255, 123);
+        margin: 0;
+        padding: 10px 0 0 200px;
+      }
+      #icon_password {
+        position: absolute;
+        top: 11px;
+        right: 26px;
+        z-index: 999;
+      }
+      #icon_con_password {
+        position: absolute;
+        top: 12px;
+        right: 26px;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- open container -->
+      <div class="row">
+        <!--  open row -->
+        <div id="form-header" class="col-12">
+          <h1 id="title">Customer Form</h1>
+        </div>
+      </div>
+      <!--  close row -->
+      <div class="row">
+        <!--  open row -->
+        <div id="form-tagline" class="col-md-4">
+          <div class="form-tagline">
+            <i class="fa fa-envelope fa-5x"></i>
+            <h2>How Are We Doing?</h2>
+            <p id="description" class="lead">We really value your opinion</p>
+          </div>
+        </div>
+        <div id="form-content" class="col-md-8">
+          <form id="form_submit">
+            <!-- open form -->
+            <div class="row form-group">
+              <div class="col-sm-3">
+                <label id="name-label" class="control-label" for="name"
+                  >*Name:</label
+                >
+              </div>
+              <div class="input-group col-sm-9">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-name">
+                    <i class="fa fa-user"></i>
+                  </span>
+                </div>
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Please Enter Your Name"
+                  name="name"
+                />
+              </div>
+              <p class="message_name"></p>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label id="email-label" class="control-label" for="email"
+                  >*Email:</label
+                >
+              </div>
+              <div class="input-group col-sm-9">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-mail">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  name="email"
+                  pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$"
+                />
+              </div>
+              <p class="message_email"></p>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label id="number-label" class="control-label" for="email"
+                  >* Password:</label
+                >
+              </div>
+              <div class="input-group col-sm-9">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-room">
+                    <i class="fa fa-door-open"></i>
+                  </span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter Your password"
+                  name="password"
+                  min="1"
+                  max="125"
+                />
+                <i class="fa fa-eye" id="icon_password" aria-hidden="true"></i>
+              </div>
+              <p class="message_password"></p>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label id="number-label" class="control-label" for="email"
+                  >*Conform Password:</label
+                >
+              </div>
+              <div class="input-group col-sm-9">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon-room">
+                    <i class="fa fa-door-open"></i>
+                  </span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="conform_password"
+                  placeholder="Enter Your password"
+                  name="conform_password"
+                />
+                <i class="fa fa-eye" id="icon_con_password" aria-hidden="true"></i>
+              </div>
+              <p class="message_conform"></p>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label class="control-label" for="visit-purpose"
+                  >Accept term & Con.</label
+                >
+              </div>
+              <div class="col-sm-9">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="star-rating"
+                    id="agreeTerms"
+                    value="five-star"
+                  />
+                </div>
+                <p class="message_term"></p>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+              <div class="col-sm-12 submit-button">
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn btn-default"
+                  aria-pressed="true"
+                >
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- close form -->
+        </div>
+        <!-- close form content div -->
+      </div>
+      <!-- close row -->
+    </div>
+    <!--  close container -->
+    <footer>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $("#form_submit").submit(function (event) {
+
+          event.preventDefault();
+          
+          var error_massage = $(".message");
+          error_massage.html("").removeClass("message_red message_green");
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var password = $("#password").val();
+          var check = $("#agreeTerms").is(":checked");
+          var conform_password = $("#conform_password").val();
+          if (
+            name === "" &&
+            email === "" &&
+            password === "" &&
+            conform_password === ""
+          ) {
+            $(
+              ".message_name ,.message_email ,.message_password,.message_conform"
+            )
+              .html("All Fields Are Required")
+              .addClass("message_red");
+          } else {
+            var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+            $(
+              ".message_name ,.message_email ,.message_password,.message_conform"
+            )
+              .html("")
+              .removeClass("message_red");
+            if (!regName.test(name)) {
+              $(".message_name")
+                .text("Name should contain only alphabetic characters")
+                .addClass("message_red");
+            } else {
+              $(".message_name").empty();
+            }
+            if (!/^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$/.test(email)) {
+              $(".message_email")
+                .text("Enter a valid email like 'example@gmail.com'")
+                .addClass("message_red");
+            } else {
+              $(".message_email").empty();
+            }
+
+            if (!check) {
+              $(".message_term")
+                .html("please check the term and condition")
+                .css("color", "red");
+            } else {
+              $(".message_term").html("");
+              alert("Message sent successfully!");
+              $("form")[0].reset();
+            }
+          }
+        });
+        $("#password").keyup(function () {
+          var password = $("#password").val();
+          var hasSpecialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password);
+          var hasCapitalLetter = /[A-Z]/.test(password);
+
+          if (hasSpecialChar && hasCapitalLetter) {
+            $(".message_password").empty();
+          } else {
+            $(".message_password")
+              .text(
+                "Password should be at list one Capital latter and one special char"
+              )
+              .addClass("message_red");
+          }
+        });
+        $("#conform_password").keyup(function () {
+          var password = $("#password").val();
+          if ($(this).val() == password) {
+            $(".message_conform")
+              .html("Password Match!")
+              .addClass("message_green");
+          } else {
+            $(".message_conform")
+              .html("Password & Confirm Pasword does not Match!")
+              .addClass("message_red");
+          }
+        });
+
+        $("#icon_password").click(function () {
+                var pass = $("#password");
+                if (pass.attr("type") === "password") {
+                    pass.attr("type", "text");
+                } else {
+                    pass.attr("type", "password");
+                }
+            });
+            $("#icon_con_password").click(function () {
+                var pass = $("#conform_password");
+                if (pass.attr("type") === "password") {
+                    pass.attr("type", "text");
+                } else {
+                    pass.attr("type", "password");
+                }
+            });
+      });
+    </script>
+  </body>
+</html>

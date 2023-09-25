@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top Example</title>
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <style>
+    /* Add your custom CSS styles here */
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#scrollNextButton{
+    /* display: none; */
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.box1{
+    width: 20%;
+    height: 20vh;
+    background-color: #007BFF;
+
+}
+.box2{
+    /* display: none; */
+    width: 20%;
+    height: 20vh;
+    background-color: #1fc610;
+    
+}
+.box3{
+    width: 20%;
+    height: 20vh;
+    background-color: #b51f88;
+    
+}
+.box4{
+    display: none;
+    width: 20%;
+    height: 20vh;
+    background-color: #090909;
+    
+}
+body{
+    height: 200vh;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: none;
+}
+#next{
+    display: none;
+}
+.rotated {
+  transform: rotate(90deg);
+  transition:2s; 
+  /* transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+}
+   </style>
+</head>
+<body>
+    <button id="scrollToTopButton">Scroll to Top</button>
+    <!-- <button id="scrollNextButton">scrolll up</button> -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box4"></div>
+    <div class="box3"></div>
+
+    <ul id="list">
+    <button id="click">click</button>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <button id="next">next</button>
+    </ul>
+    
+
+<script>
+    $(document).ready(function() {
+    // Show the "Scroll to Top" button when the user scrolls down 200 pixels
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 40) {
+            $('#scrollToTopButton').fadeIn();
+        } else {
+            $('#scrollToTopButton').fadeOut();
+        }
+    });
+    var length = $('.box3').offset().top;
+    $(window).scroll(function() {
+        var currentScroll = $(this).scrollTop();
+        if(currentScroll>=length){
+            $(".box3").css({
+                position : 'fixed',
+                top : '5px'
+            })
+        }else{
+            $(".box3").css({
+                position : 'static',
+                top : 'unset'
+            })
+        }
+    });
+    $('.box3').click(function() {
+        $(".box4").slideToggle(500, function () {
+            // $(this).toggleClass("rotated");
+          });
+        //   $(".box2").slideToggle(500);
+    });
+    // Scroll to the top when the button is clicked
+    $('#scrollToTopButton').click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); // Adjust the animation speed as needed
+    });
+        var list = $("#list li");
+        var currentIndex = 0;
+    $("#click").click(function(){
+        $("#next").show();
+        list.hide();
+        list.slice(0,3).toggle(true);
+        currentIndex = 3;
+        if (currentIndex <= list.length) {
+          $("#next").click(function(){
+            $(this).hide();
+            list.show();
+          })
+    }
+    })
+
+
+});
+
+</script>
+</body>
+</html>

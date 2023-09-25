@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: auto;
+      }
+      .new {
+        margin-top: 30px;
+        height: 10vh;
+      }
+      .property {
+        height: 30px;
+        background-image: linear-gradient(
+          rgb(174, 168, 168, 0.5),
+          rgb(237, 237, 221)
+        );
+        padding-left: 40px;
+        font-size: 16px;
+      }
+      .select_images {
+        border: 1px solid rgb(183, 157, 157);
+        padding: 80px 30px;
+      }
+      input {
+        margin-right: 1px;
+        height: 28px;
+      }
+      #option,
+      .option {
+        margin: 0;
+        text-align: center;
+        background-color: transparent;
+        font-size: 16px;
+        height: 26px;
+      }
+      .property_images {
+        display: flex;
+        justify-content: center;
+        /* align-items:center; */
+        padding: 80px;
+        border: 1px solid rgb(183, 157, 157);
+      }
+      .box1 {
+        display: flex;
+        margin-top: 8px;
+      }
+      .remove {
+        margin-left: 15px;
+      }
+      #add {
+        margin-top: 30px;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row new">
+      <div class="col-12 property">property image</div>
+      <div class="row add_div col-12">
+        <div class="col-3 property_images">property images</div>
+        <div class="select_images">
+          <div class="main_div">
+            <div class="box1">
+              <input type="text" />
+              <input type="file" id="file" />
+              <select name="" id="option">
+                <option value="">primery image</option>
+              </select>
+            </div>
+          </div>
+          <div class="box2">
+            <button id="add">Add Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#add").click(function () {
+          var html = `<div class="box1">
+                                    <input type="text">
+                                    <input type="file" class="file">
+                                    <select name="" class="option">
+                                        <option value="">Secondary Image</option>
+                                    </select>
+                                    <a class="remove"> Remove</a>
+                                </div>
+                            </div>`;
+          var html_code = $(".main_div").append(html);
+        });
+        $("div").delegate(".remove", "click", function () {
+          $(this).parent().remove();
+        });
+      });
+    </script>
+  </body>
+</html>

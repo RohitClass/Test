@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Information</title>
+    
+</head>
+<body>
+    <h1>Person Information</h1>
+    First Name: <span id="firstname"></span><br>
+    Last Name: <span id="lastname"></span><br>
+    Date of Birth: <span id="dob"></span>
+
+    <script>
+        var person = {
+            "firstname": "Rohit",
+            "lastname": "sharma",
+            "dob": "19-06-1998"
+        };
+  
+        document.getElementById("firstname").innerHTML = person.firstname;
+        document.getElementById("lastname").innerHTML = person.lastname;
+        document.getElementById("dob").innerHTML = person.dob;
+    </script>
+</body>
+</html>
