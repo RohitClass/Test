@@ -1,0 +1,158 @@
+<br />
+<b>Warning</b>:  filesize(): stat failed for Csv-file/email_data.csv in <b>C:\xampp\htdocs\jquery_assignment\Test\email.php</b> on line <b>59</b><br />
+<br />
+<b>Warning</b>:  readfile(Csv-file/email_data.csv): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\jquery_assignment\Test\email.php</b> on line <b>60</b><br />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Data</title>
+</head>
+<body>
+    <a href="email_data.csv" download>Download CSV</a>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>From</th>
+            <th>Date</th>
+            <th>Message Body</th>
+        </tr>
+        <tr><td>Rohit, finish setting up your new Google Account</td><td>Google Community Team <googlecommunityteam-noreply@google.com></td><td>2023-09-27 09:50:36</td><td>
+
+Hi Rohit,
+
+Welcome to Google. Your new account comes with access to Google products,  
+apps and services.
+
+Here are a few tips to get you started.
+
+
+Get the most out of your Google Account
+
+We'll send you personalised tips, news and recommendations from Google.
+
+Yes, keep me updated  
+<https://notifications.google.com/g/p/ANiao5rYzZsxFXmtoiOc70umV38ZKPjU9HXzZLMkB5gTSO4cRnuakQa_u0C86t3tGa9g35ng0qGYV9hZ06_fIm2AGuQ5Nuj73RgyaCveVdraeJeG4LgxA0tZklGL-fz0CM1o4_neOlZoorrU-BZsYWiTxsQ1IYNaKuAiYIIx3oaXUlNiGTlZ4RQigJhSLgoLmNAVOx5TTemA2Al3af4mCVD6d0bU-MDnqbbxQ8Q3zr-4m95VPgT69fOO__fHsrX-jW3Y3yuvUNfrdJCSw7XNVW0c7qCu6bHOU-Kh08gCnMWuZAQC5-RJF93rvv3X4JqhLhu0ifBFdJT7EicamAln29BXYS_A3RMwdEUGqpW31ySO6IpPV4FC6YYUhDx3MfTHkpdQMXome-Xkq_6uqOKDNOP48fWqJuoy1BFdMYyfe4FGW58Ofr6E6qiJYNd8raQtziEAFeYRw37EIuuXo4uOt2wTnrnQw1zTa2PeeTC22YFDZg5Mn9vVqoVz-7Bv_nSCvnYSv9Jyb8ogdtDgggYHmOold6q9ukn56Wei9V9OcwsUowvfD3rhDwoEoyZwkEEs9VvxvONz4ChNJYOYszN5epav34GKwzXj4vUiw5GShLC8_Taoh7R4G7adcObxsYg>
+
+Stay up to date with the Google app
+
+Find quick answers, explore your interests and stay up to date.
+
+Try it  
+<https://notifications.google.com/g/p/ANiao5q5yi9QK9eMI8-QNJ7MtLvEyaSMe6WU98H7fxgBl8qVXIDgsbz7soZKZzdH0Dm3SluxBkgI3uKMyM6dkPFhxHPgretZhDfmuu5Qsx5hvPE6gwv-dnBwvluEC7uwyzEYCcnEbKxFRSQe5p8kWq0-tPg6-OEHoV8AqwlK9b9LCwGYiC_zLFf17dB0n4NQe9rYqBaT8-RWFg8XC8yltoUWBmmtHQ0ASZPMu48MV3-L5nP95bz1YprlfV-N6BWx3xO0DML8qOk8tE_JI6KovmeTIaRB2wgu9APjCLr30G03s9tRjZkAkQ4uJrvww7YUVlSam6fe-vtP4frJdLePqP4xQyoIobOtlac9f3_HkXn7SM8Ic1-Bgaa4j2IZWg>
+
+More from Google
+
+Discover the latest apps from Google.
+
+For Android  
+<https://notifications.google.com/g/p/ANiao5qJemfBtW9w1BZk6pJTWIIKDoKhR4nET518hInIzsnQRA7U-7UepUcmFlim7-2lWEpu8Ta08uIRZ_YHbWk1Whom41aucOh6zZS_E1uCL9VTcZdoHfK2wKz_66YcEhenaIhD7P5bNRF06ZLoAuwBwpzSo9RksXZUS_aNMqQvCbQrRkG-3q4P3ZOE-V2Rf-tT465PoYa-18Z16bkyjy9zpKzEquBRjMTq7amwoDAPgxZcPgRYv8ngCc8oT3bqiJBPAaXn85LnDvsHbEOJz4bMnYxR9JGCnfz4FAATXm9CLKKWedakd2NAb9l0puGj96Zls5RL6a6xxQh1pVAvK4KI9d9fg1krF9vf2AHhbh2QXvyRRLTkV6VDLeWLCuviI-L7Mcu6oAIKeIc1eqJUdIo_FAT5Y6qPBloo4KFzQG6-avLFeuhAq0lXHSNMmoDOInrO6lD-Zb6_nvD4wdHaWzZB54247iNDpWW28PmXlSJSl4dx7QzlcYEDbVFZWrnrfl2wYSs-J-6e2bhPJBK-0qWjv89RVV9Fgq5fXhqQjKgqgOa5ZDJRMu4hVCGoIvLeqh7lGezkPGAQdDP_5l9cz4WuW0cnqNeNopYaeemqgspLAV3DHVluAVeJY0yVVRjhNLx_IS9udUxi0Gl_YLC5thMTt89MxMI>
+
+For iOS  
+<https://notifications.google.com/g/p/ANiao5q_NxnG_IBNdehL2IbK-OKKQf_OL-bCkDmd5YY870TFD2OABvUl7J9Tgy8Smf2UJzwXFDkEvQrWzL-T31d7MEAjSyD_L3ygUqieCWDUqXw3p5geKcJzT7m5AAqad1W0psiZdNoGszSujX3PORbcAa-okOWwpuxgq14pDI3JZxHxkS_TM1XvDKDw_HQjq4oTF885dLDIh077E6H9N6OS2IE3S9PUl4V4jUPAfL5nSf8LUBx8LDZkGMNzDUnlaxgfmotthcaHP45uVV1_BFFvLtP2R-ALYnD7vuGAiwUhdCQ1_xl5UzFgXtV6Ymos3hBgqzXpGPXmGdVp6qaTRZxWMtXsdWkTHOv5hTL_2Ut5EWb4CDr_zWiQnP29XC8DwuTx2r9d43o04qm7eQ>
+
+Confirm that your options are right for you
+
+Review and change your privacy and security options to make Google work  
+better for you.
+
+Confirm  
+<https://notifications.google.com/g/p/ANiao5oric_6cmTg-qS-C4bzduIz7ZKrp7VyBhWxSyzR8l-eUzofgTJUl9rX5XlbX3wqrUgfWkIrsAdb4JBTPP6XEEuGKJIOT0CtjyxlNPCQSAut_atKMtnUUt1_1IIhartSAtJnZkFEB3d9qepP8hHes6WoQmThVJqORRqfl-icz_brCB6dlD1km9GYjO8rK_gotbBnA-o5tIdmNux3KCYiFRmL7IDfpOFJ40iQ-rWuBm2oos-A0OnUdx7N4QJ6Y7IBtsJ50AK-9DXtr9FAOaGxg--TtC9G4lq97PTGXP38NNABnjezSsWnIxm-1jokF1ce_nERK68VE-rAwzIEiYqC>
+
+Find answers
+
+Visit the Help Centre  
+<https://notifications.google.com/g/p/ANiao5pVWKrE_Vm5Pn0r_Qr1NmBwIPuw-fROW2ng1FxdPusty_tPXbaKE1GL_0ni2ZV2t8MS-P85VQvLnSICv_l7I9sRqcDevcH2PR_KrVFKnDfUSFsj5bi0vlFzGB34pc6w3dgd0-xp8RWt0zz9TrsBECjZen_sg5E0UlOLvmYaaNzfP-BAtzJraYaq4ox6A6_eWGDLpSlJppfcSHegYPlrARbNeOTPiXoUwuJEINXFSIh0WXgGjThhC7Z9AUHS1fX8p0xD_DJajFYS81OFUrYtX7RuNulC9BNl6SGx6k_wp9zx1yEw>  
+to learn all about your new Google Account.
+
+
+Replies to this email aren't monitored. If you have a question about your  
+new account, the Help Centre  
+<https://notifications.google.com/g/p/ANiao5pJCJPQxYLA-SfL_tYvc20O_mZwsVzVWrAGDom4wO353NIsLmptvXRa1DVmg2XB67Zz13geFUEo6LiCvZvcTeLbNX4EWMRlQe_yuUAUe4BEYBtVo1_F_pkMcsQxzROTeIBybTUgMXUyHl3eIn68Zp9DkH6w3-B0Zp_BaIciuTNuKncT1y2j5ELtihbL40vj5nD6UUL_yHgxwl8YoODMfAhEMgNoRRxFS8ffKOeGxunmKkGg5EKegTIo3WrfqdAuz3jRu0zuysmbkYgmFy2cToLeJTVSl3DxCZVVknmGIuHa5R7EsnOjgKho>  
+probably has the answer that you're looking for.
+
+
+
+Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
+
+This email was sent to you because you created a Google Account.
+</td></tr><tr><td>Security alert</td><td>Google <no-reply@accounts.google.com></td><td>2023-09-27 15:03:25</td><td>[image: Google]
+Phone number added for 2-Step Verification
+
+
+rohitsharma243403@gmail.com
+Codes to sign in to your account now go to a new phone number. If you
+didn't add this number, someone else might be using your account. Check and
+secure your account now.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=rohitsharma243403@gmail.com&continue=https://myaccount.google.com/alert/nt/1695819805273?rfn%3D259%26rfnc%3D1%26eid%3D-4854803904891460686%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2023 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+</td></tr><tr><td>2-Step Verification turned on</td><td>Google <no-reply@accounts.google.com></td><td>2023-09-27 15:03:29</td><td>[image: Google]
+2-Step Verification turned on
+
+
+rohitsharma243403@gmail.com
+
+Your Google Account rohitsharma243403@gmail.com is now protected with
+2-Step Verification. When you sign in on a new or untrusted device, you’ll
+need your second factor to verify your identity.
+
+*Don't get locked out!*
+You can add a backup phone or get backup codes to use when you don’t have
+your second factor with you.
+You can review your 2SV settings
+<https://accounts.google.com/AccountChooser?Email=rohitsharma243403@gmail.com&continue=https://myaccount.google.com/signinoptions/two-step-verification?rfn%3D16%26rfnc%3D1%26eid%3D3993335233989451275%26et%3D0>
+to make changes.
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2023 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+</td></tr><tr><td>Security alert</td><td>Google <no-reply@accounts.google.com></td><td>2023-09-27 15:09:15</td><td>[image: Google]
+App password created to sign in to your account
+
+
+rohitsharma243403@gmail.com
+If you didn't generate this password for Rohit@123, someone else might be
+using your account. Check and secure your account now.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=rohitsharma243403@gmail.com&continue=https://myaccount.google.com/alert/nt/1695820155482?rfn%3D20%26rfnc%3D1%26eid%3D1441260040369720086%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2023 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+</td></tr><tr><td>Security alert</td><td>Google <no-reply@accounts.google.com></td><td>2023-09-27 15:25:20</td><td>[image: Google]
+App password used to sign in was removed
+
+
+rohitsharma243403@gmail.com
+If you didn't remove this password, someone else might be using your
+account. Check and secure your account now.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=rohitsharma243403@gmail.com&continue=https://myaccount.google.com/alert/nt/1695821120015?rfn%3D269%26rfnc%3D1%26eid%3D3343905494050797548%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2023 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+</td></tr><tr><td>Security alert</td><td>Google <no-reply@accounts.google.com></td><td>2023-09-27 15:25:30</td><td>[image: Google]
+App password created to sign in to your account
+
+
+rohitsharma243403@gmail.com
+If you didn't generate this password for Rohit, someone else might be using
+your account. Check and secure your account now.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=rohitsharma243403@gmail.com&continue=https://myaccount.google.com/alert/nt/1695821130611?rfn%3D20%26rfnc%3D1%26eid%3D787467453306596985%26et%3D0>
+You can also see security activity at
+https://myaccount.google.com/notifications
+You received this email to let you know about important changes to your
+Google Account and services.
+© 2023 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+</td></tr>    </table>
+</body>
+</html>
