@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Search</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="Search posts..." id="searchText">
+    <ul id="display"></ul>
+
+    <script>
+        $(document).ready(function(){
+            var datadisplay = $("#display");
+            var searchInput = $("#searchText");
+            var allData = null;
+
+            // Fetch data from the JSONPlaceholder API and display all items
+            $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
+                allData = data;
+                displayData(data);
+            });
+
+            function displayData(data) {
+                datadisplay.empty();
+
+                $.each(data, function(index, value) {
+                    datadisplay.append("<li>"+value.title+"</li>");
+                });
+            }
+
+            searchInput.on('input', function() {
+                var searchTerm = searchInput.val().toLowerCase();
+
+                if(allData) {
+                    if(searchTerm) {
+                        var filterdata = allData.filter(function(item) {
+                            return item.title.toLowerCase().includes(searchTerm);
+                        });
+
+                        if(filterdata.length > 0) {
+                            displayData(filterdata);
+                        } else {
+                            datadisplay.empty();
+                            datadisplay.append("<li>No data found</li>");
+                        }
+                    } else {
+                        displayData(allData); // Show all data when search term is empty
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
